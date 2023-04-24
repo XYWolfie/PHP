@@ -1,0 +1,322 @@
+body {
+    background-color: rgb(255, 190, 206);
+    color: black;
+    margin: 0%;
+}
+.back_div {
+background-color: rgb(255, 255, 255);
+align-items: baseline;
+}
+
+.top {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0%;
+    width:100%;
+    color: rgb(209, 244, 255);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.applol {
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-content: center;
+    font-size: 45px;
+}
+.bio {
+    background-color: rgb(209, 244, 255);
+    padding-left: 5px;
+    width: 200px;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+}
+button {
+    cursor: pointer;
+}
+input {
+    cursor: pointer;
+}
+h2 {
+    margin-block-start: 0.25em;
+    margin-block-end: 0.70em;
+    font-family: Courier, garamond, georgia
+}
+p {
+    margin-block-start: 0.2em;
+    margin-block-end: 5.0em;
+    font-family: Courier, garamond, georgia
+}
+h1 {
+    font-family: Courier, garamond, georgia
+}
+h3{
+    font-family: Courier, garamond, georgia
+}
+h4{
+    font-family: Courier, garamond, georgia
+}
+.profilbilde {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.profilbilde:hover {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    animation: rotation 1s infinite linear;
+}
+
+.innlegg_og_bilder {
+    display: flex;
+    flex-direction: row;
+}
+
+.bilde_div {
+    
+    margin: auto;
+    width: 800px;
+    border: 3px solid rgb(255, 190, 206);
+    padding: 10px;
+}
+
+.bilder {
+    height: 190px;
+    width: 140px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.alt {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    
+}
+img {
+    object-fit: cover;
+}
+
+.full_name {
+    text-align: center;
+    align-content: center;
+}
+.about_div {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.content {
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: rgb(255, 190, 206);
+}
+.innlegg {
+    background-color: rgb(254, 255, 183);
+    
+}
+.navbar {
+    width: 100%;
+    background-color:rgb(209, 244, 255);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    text-align: center;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 19px;  
+    margin-bottom: 30px;
+}
+.allindex {
+    display: flex;
+    flex-direction: column;
+}
+.allusers {
+    text-align: center;
+    align-self: center;
+    width: 40%;
+    border: 25px solid rgb(209, 244, 255);
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+}
+.stort_bilde {
+    width:20%;
+    height:20%;
+    align-self: center;
+    
+}
+.bildeseeing {
+    display: flex;
+    justify-content: center;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+  
+  input[type=text]:focus {
+    width: 100%;
+}
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(255, 190, 206);;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(255, 132, 163);
+}
+  
+.button:hover {background-color: rgb(255, 164, 185);}
+  
+.button:active {
+    background-color: rgb(255, 142, 170);
+    box-shadow: 0 5px rgb(233, 58, 102);
+    transform: translateY(4px);
+}
+   
+
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; 
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+
+  .closebtn:hover {
+    color: black;
+  }
+  
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+  .like_button {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .like_button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .like_button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  
+.underline {
+    text-decoration-line: underline;
+    text-decoration-color:rgb(255, 190, 206); 
+}
+
+
+
+
+
+

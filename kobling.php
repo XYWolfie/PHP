@@ -1,9 +1,9 @@
 <?php
 
-$server = "";
+$server = "localhost";
 $brukernavn = "root";
 $passord = "";
-$database = "giftige_planter";
+$database = "applol";
 
 $kobling = new mysqli($server, $brukernavn, $passord, $database);
 
@@ -14,19 +14,27 @@ if ($kobling->connect_error) {
     echo "tilkoblingen virker";
 }
 
-$sql ="SELECT * FROM giftige_planer";
+$sql ="SELECT * FROM applol";
 $resultat = $kobling->query($sql);
 
 while($rad = $resultat->fetch_assoc()){
-    $idgiftige_planter = $rad['idgiftige_planter'];
-    $navn = $rad['navn'];
-    $art = $rad['art'];
-    $doodlighet = $rad['doodlighet'];
-    $naering = $rad['naering'];
-    $farge = $rad['farge'];
-    $størrelse = $rad['størrelse'];
+    $idapplol = $rad['idapplol'];
+    $username = $rad['brukernavn'];
+    $first_name = $rad['fornavn'];
+    $last_name = $rad['etternavn'];
+    $bio = $rad['bio'];
+    $password = $rad['passord'];
+    $mail = $rad['epost'];
+    $tlf = $rad['tlf'];
+    $school = $rad['skole'];
+    $residence = $rad['bosted'];
+    $birthdate = $rad['fodselsdato'];
+    
 
-    echo "$idgiftige_planter, $navn, $art, $doodlighet, $naering, $farge, $størrelse";
+    
+
+    echo "$idapplol, $username, $first_name, $last_name, $bio, 
+    $password, $mail, $tlf, $school, $residence, $birthdate";
 }
 
 ?>
